@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+
+<main class="form-container">
+    <h2>Edit Quote</h2>
+
+    <form action="/quotes/<%= quote.id %>?_method=PATCH" method="POST" class="quote-form">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" value="<%= quote.author %>" required>
+
+        <label for="text">Quote:</label>
+        <textarea name="text" id="text" rows="4" required><%= quote.text %></textarea>
+
+        <button type="submit" class="btn btn-primary">Update Quote</button>
+    </form>
+</main>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,291 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0 12px;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.quote-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.quote-card:hover {
+  transform: scale(1.01);
+}
+
+.quote-card p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+/* Form Styling */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quote-form {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.quote-form input,
+.quote-form textarea {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.quote-form input:focus,
+.quote-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+/* Button shared style already exists */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Footer Dark */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.quote-display {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.quote-display h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #dcdcdc;
+}
+
+.quote-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #5a67d8;
+  color: white;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #434190;
+}
+
+.btn-danger {
+  padding: 0.5rem 1rem;
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #c53030;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.quote-heading {
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.quote-card {
+  background-color: #2a2a3d;
+  color: black;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.quote-card:hover {
+  transform: scale(1.02);
+}
+
+.quote-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #3182ce;
+}
+
+.btn-edit {
+  background-color: #805ad5;
+}
+
+.btn-delete {
+  background-color: #e53e3e;
+}
+
+.btn-view:hover {
+  background-color: #2b6cb0;
+}
+
+.btn-edit:hover {
+  background-color: #6b46c1;
+}
+
+.btn-delete:hover {
+  background-color: #c53030;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #c084fc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f472b6;
+}

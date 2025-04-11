@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <h2 class="quote-heading">All Quotes</h2>
+
+    <% quotes.forEach(quote => { %>
+        <div class="quote-card">
+            <p><strong><%= quote.author %>:</strong> <%= quote.text %></p>
+            <div class="quote-buttons">
+                <a href="/quotes/<%= quote.id %>" class="btn btn-view">View</a>
+                <a href="/quotes/<%= quote.id %>/edit" class="btn btn-edit">Edit</a>
+                <form action="/quotes/<%= quote.id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-delete">Delete</button>
+                </form>
+            </div>
+        </div>
+    <% }) %>
+</div>
+
+<%- include("partials/footer") %>

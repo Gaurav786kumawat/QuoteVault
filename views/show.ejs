@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<main class="quote-display">
+    <h2><%= quote.author %></h2>
+    <p class="quote-text">"<%= quote.text %>"</p>
+
+    <div class="quote-actions">
+        <a href="/quotes/<%= quote.id %>/edit" class="btn-link">Edit</a>
+
+        <form action="/quotes/<%= quote.id %>?_method=DELETE" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+    </div>
+</main>
+
+<%- include("partials/footer") %>
